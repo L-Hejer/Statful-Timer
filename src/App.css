@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clock{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.hour, .minute, .second{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  font-size: 60px;
+  font-weight: 500;
+}
+p{
+  position: relative;
+  bottom:30px;
+  color: lightslategray;
+  font-size: small;
+}
+.Start-Button{
+  padding: 10px 40px;
+  font-size: 15px;
+  color: rgb(13, 173, 133);
+  background: transparent;
+  border-radius: 7px;
+  border:2px solid rgb(13, 173, 133) ;
+}
+.pause-button{
+  padding: 10px 40px;
+  font-size: 15px;
+  color: red;
+  background: transparent;
+  border-radius: 7px;
+  border:2px solid red ;
+}
+.Reset-Button{
+  margin-left: 90px;
+  padding: 10px 40px;
+  font-size: 15px;
+  color: black;
+  background: transparent;
+  border-radius: 7px;
+  border:2px solid black ;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+button:focus{
+  outline: 0;
 }
